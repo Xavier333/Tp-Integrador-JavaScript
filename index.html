@@ -176,17 +176,17 @@
                 <input style="width:40%" name="apellido" type="text" placeholder="Apellido"><br><br>
                 <input style="width:90.5%" name="email" type="email" placeholder="Email"><br><br>
                 
-                <input class="flexbox p-1" name="cantidad" type="number" placeholder="Cantidad">
+                <input id="cantidad2" class="flexbox p-1" name="cantidad" type="number" placeholder="Cantidad">
                                         
-                <select class="flexbox p-1" name="menu">
+                <select id="categoria" class="flexbox p-1" name="menu">
                     <option value="1">Estudiante</option>
                     <option value="2">Trainee</option>
                     <option value="3">Junior</option>
                 </select>
                     
-                <label class="totalPagar p-2 mt-4" style="width: 90.5%; text-align: left;">Total a pagar: $</label><br><br>
-                <input class="btn btn-success" value="Borrar" name="borrar" type="submit" style="width:45.25%"></input>
-                <input class="btn btn-success" value="Resumen" name="resumen" type="submit" style="width:45.25%"></input>
+                <label id="totalPagar" class="totalPagar p-2 mt-4" style="width: 90.5%; text-align: left;">Total a Pagar: $0</label><br><br>
+                <input class="btn btn-success" value="Borrar" name="borrar" type="reset" style="width:45.25%"></input>
+                <button class="btn btn-success" onclick="resumen()" type="button" style="width:45.25%">Resumen</button>
                 <br>
             </form>
         </div>
@@ -195,7 +195,7 @@
     </main>
 
 
-    <footer style="position: absolute; margin-top: 250%;">
+    <footer style="position: absolute; margin-top: 240%;">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
             <ul class="navbar-nav mr-auto" style="margin-left:auto; margin-right:auto">
